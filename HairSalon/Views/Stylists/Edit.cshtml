@@ -17,4 +17,4 @@
   @Html.EditorFor(model => model.Notes)
   <input type="submit" value="Save" />
 }
-<p>@Html.ActionLink("Back to Stylists", "Index")</p>
+@Html.ActionLink("View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-outline-dark" })

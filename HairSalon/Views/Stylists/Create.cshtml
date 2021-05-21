@@ -13,4 +13,5 @@
   @Html.TextBoxFor(model => model.Notes)
   <input type="submit" value="Add new Stylist" />
 }
-<p>@Html.ActionLink("Show all Stylists", "Index")</p>
+
+@Html.ActionLink("Show all Stylists", "Index", "Stylists", null, new { @class = "btn btn-outline-dark"})

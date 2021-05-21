@@ -14,11 +14,10 @@
     <h5>@Html.ActionLink($"{client.Name}", "Details","Clients", new { id = client.ClientId })</h5>
   }
 </ul>
-<button type="button" type="submit" class="btn btn-outline-dark">
-  @Html.ActionLink("Edit Stylist", "Edit", new { id =Model.StylistId })</button>
-<button type="button" type="submit" class="btn btn-outline-dark">
-  @Html.ActionLink("Delete Stylist", "Delete", new { id =Model.StylistId })</button>
-<button type="button" type="submit" class="btn btn-outline-dark">
-  @Html.ActionLink("View all Stylists", "Index")</button>
-<button type="button" type="submit" class="btn btn-outline-dark">
-  @Html.ActionLink("Home", "Index", "Home")</button>
+
+@Html.ActionLink("Edit Stylist", "Edit", "Stylists", new { id =Model.StylistId }, new { @class = "btn btn-outline-dark"})
+@Html.ActionLink("Delete Stylist", "Delete", "Stylists", new { id =Model.StylistId }, new { @class = "btn btn-outline-dark"})
+@Html.ActionLink("View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-outline-dark"})
+@Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn btn-outline-dark"})
+
+
