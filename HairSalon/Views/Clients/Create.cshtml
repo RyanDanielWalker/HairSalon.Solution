@@ -17,5 +17,5 @@
 
   <input type="submit" value="Add New Client" class="btn btn-default" />
 }
-<p>@Html.ActionLink("Show all Clients", "Index")</p>
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+@Html.ActionLink("Show all Clients", "Index", "Clients", null, new { @class = "btn btn-outline-dark"})
+@Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn btn-outline-dark"})

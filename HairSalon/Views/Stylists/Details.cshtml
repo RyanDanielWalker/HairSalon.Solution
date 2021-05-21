@@ -15,6 +15,7 @@
   }
 </ul>
 
+@Html.ActionLink("Add new Client", "Create", "Clients", null, new {@class = "btn btn-outline-dark"})
 @Html.ActionLink("Edit Stylist", "Edit", "Stylists", new { id =Model.StylistId }, new { @class = "btn btn-outline-dark"})
 @Html.ActionLink("Delete Stylist", "Delete", "Stylists", new { id =Model.StylistId }, new { @class = "btn btn-outline-dark"})
 @Html.ActionLink("View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-outline-dark"})
