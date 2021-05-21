@@ -10,6 +10,8 @@
 <h4><span class="underLine">Notes</span>:</h4>
 <p>@Html.DisplayFor(model => model.Notes)</p>
 
+<div class="flex">
 @Html.ActionLink("Edit Client", "Edit", "Clients", new {id = Model.ClientId}, new { @class = "btn btn-outline-dark" })
 @Html.ActionLink("Delete Client", "Delete", "Clients", new {id = Model.ClientId}, new { @class = "btn btn-outline-dark"})
 @Html.ActionLink("View all Clients", "Index", "Clients", null, new { @class = "btn btn-outline-dark" })
+</div>

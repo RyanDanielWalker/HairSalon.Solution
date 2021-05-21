@@ -41,7 +41,7 @@ ul {
     height: 10%;
     padding: 0;
     margin: 5px;
-    margin-top: 25vh;
+    margin-top: 20vh;
     font-size: smaller;
 }
 .btn-outline-success {
@@ -51,8 +51,10 @@ ul {
   display: block;
   font-size: small;
 }
-input.btn.btn-outline-danger {
+.btn-outline-danger, .btn-outline-primary {
+  margin: auto;
+  width: 40%;
   padding: 0;
-  width: width 20%;
+  display: block;
 }
 
