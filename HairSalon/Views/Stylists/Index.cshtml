@@ -20,7 +20,10 @@ else
       <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</li>
     }
   </ul>
+
+  <div class="flex">
   @Html.ActionLink("Add new Stylist", "Create", "Stylists", null, new {@class = "btn btn-outline-dark"})
   @Html.ActionLink("Add new Client", "Create", "Clients", null, new {@class = "btn btn-outline-dark"})
   @Html.ActionLink("Home", "Index", "Home", null, new {@class = "btn btn-outline-dark"})
+</div>
 }

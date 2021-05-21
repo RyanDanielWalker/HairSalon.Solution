@@ -26,4 +26,29 @@ ul{
   display: block;
   border: 1px solid black;
 }
+/* .btn {
+  margin: auto;
+  width: 45%;
+  margin-bottom: 5px;
+  display: inline-block;
+} */
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
 
+.btn {
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex:  1 1 auto;
+    -webkit-flex:  1 1 auto;
+    -ms-flex:  1 1 auto;
+    flex:  1 1 auto;
+    height: 10%;
+    padding: 0;
+    margin: 5px;
+    margin-top: 25vh;
+    font-size: smaller;
+}
