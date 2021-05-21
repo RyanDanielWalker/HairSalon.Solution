@@ -4,5 +4,7 @@
 
 <h1>Welcome to Eau Claire's Salon Stylist and Client List!</h1>
 <h3>What would you like to do?</h3>
-@Html.ActionLink("See all Stylists", "Index", "Stylists", null, new { @class = "btn btn-outline-dark"})
-@Html.ActionLink("See all Clients", "Index", "Clients", null, new { @class = "btn btn-outline-dark"})
+<div class="flex">
+  @Html.ActionLink("See all Stylists", "Index", "Stylists", null, new { @class = "btn btn-outline-dark"})
+  @Html.ActionLink("See all Clients", "Index", "Clients", null, new { @class = "btn btn-outline-dark"})
+</div>

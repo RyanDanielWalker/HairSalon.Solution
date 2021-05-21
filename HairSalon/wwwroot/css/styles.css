@@ -1,37 +1,30 @@
-.card{
+* {
+  text-align: center;
+}
+body {
+  background-color: blueviolet;
+}
+.card {
   margin: auto;
   margin-top: 5vh;
-  width: 50vw;
+  width: 60vw;
   max-width: 600px;
   padding: 10px;
 }
-*{
-  text-align: center;
-}
-h1, .underLine{
+h1, .underLine {
   text-decoration: underline;
 }
-input{
+input {
   margin: auto;
   width: 65%;
   display: block;
   margin-bottom: 10px;
 }
-ul{
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.link{
-  display: block;
-  border: 1px solid black;
-}
-/* .btn {
-  margin: auto;
-  width: 45%;
-  margin-bottom: 5px;
-  display: inline-block;
-} */
 .flex {
     display: -webkit-box;
     display: -moz-box;
@@ -39,8 +32,7 @@ ul{
     display: -webkit-flex;
     display: flex;
 }
-
-.btn {
+.btn-outline-dark {
     -webkit-box-flex: 1 1 auto;
     -moz-box-flex:  1 1 auto;
     -webkit-flex:  1 1 auto;
@@ -52,3 +44,15 @@ ul{
     margin-top: 25vh;
     font-size: smaller;
 }
+.btn-outline-success {
+  margin:auto;
+  width: 40%;
+  padding: 0;
+  display: block;
+  font-size: small;
+}
+input.btn.btn-outline-danger {
+  padding: 0;
+  width: width 20%;
+}
+

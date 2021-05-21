@@ -4,7 +4,7 @@
 
 @model HairSalon.Models.Client
 
-<h4>Add a new Client</h4>
+<h4><span class="underLine">Add a new Client</span></h4>
 
 @using (Html.BeginForm())
 {
@@ -17,5 +17,7 @@
 
   <input type="submit" value="Add New Client" class="btn btn-outline-success" />
 }
-@Html.ActionLink("Show all Clients", "Index", "Clients", null, new { @class = "btn btn-outline-dark"})
-@Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn btn-outline-dark"})
+<div class="flex">
+  @Html.ActionLink("Show all Clients", "Index", "Clients", null, new { @class = "btn btn-outline-dark"})
+  @Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn btn-outline-dark"})
+</div>
