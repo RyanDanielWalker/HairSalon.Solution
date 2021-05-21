@@ -4,7 +4,7 @@
 
 @model HairSalon.Models.Stylist
 
-<h2>Details for @Html.DisplayFor(model => model.Name)</h2>
+<h2><span class="underLine">Details for @Html.DisplayFor(model => model.Name)</span></h2>
 <h4><span class="underLine">Notes</span>:</h4>
 <p>@Html.DisplayFor(model => model.Notes)</p>
 <h4><span class="underLine">Client List</span>:</h4>
@@ -14,7 +14,11 @@
     <h5>@Html.ActionLink($"{client.Name}", "Details","Clients", new { id = client.ClientId })</h5>
   }
 </ul>
-<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("View all Stylists", "Index")</p>
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+<button type="button" type="submit" class="btn btn-outline-dark">
+  @Html.ActionLink("Edit Stylist", "Edit", new { id =Model.StylistId })</button>
+<button type="button" type="submit" class="btn btn-outline-dark">
+  @Html.ActionLink("Delete Stylist", "Delete", new { id =Model.StylistId })</button>
+<button type="button" type="submit" class="btn btn-outline-dark">
+  @Html.ActionLink("View all Stylists", "Index")</button>
+<button type="button" type="submit" class="btn btn-outline-dark">
+  @Html.ActionLink("Home", "Index", "Home")</button>

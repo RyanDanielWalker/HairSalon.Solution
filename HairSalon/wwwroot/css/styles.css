@@ -22,4 +22,8 @@ ul{
   margin: 0;
   padding: 0;
 }
+.link{
+  display: block;
+  border: 1px solid black;
+}
 
