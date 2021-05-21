@@ -5,8 +5,9 @@
 @model HairSalon.Models.Stylist
 
 <h2>Details for @Html.DisplayFor(model => model.Name)</h2>
-<h3>Notes: @Html.DisplayFor(model => model.Notes)</h3>
-<h4>Clients List:</h4>
+<h4><span class="underLine">Notes</span>:</h4>
+<p>@Html.DisplayFor(model => model.Notes)</p>
+<h4><span class="underLine">Client List</span>:</h4>
 <ul>
   @foreach (var client in ViewBag.Show)
   {
