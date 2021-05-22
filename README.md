@@ -13,6 +13,24 @@ This application will allow Eau Claire to manage information about the Stylists 
 * [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 * A text editor like [VS Code](https://code.visualstudio.com/)
 * A command line interface like Terminal or GitBash to run and interact with the console app.
+* [MySQL Workbench](https://www.mysql.com/products/workbench/)
+
+### Creating a database using SQL via MySQL
+1. In the `Navigator>Administration` window of MySQL Workbench, select `Data Import/Restore`
+2. In `Import Options` select `Import from Self-Contained File`
+3. Navigate to the `HairSalon.Solution/ryan_walker.sql` file 
+4. Under `Default Schema to be Imported To` select `New` 
+5. Enter the name of your database following this naming convention `schema_name`
+6. Click `Start Import`
+
+### Connecting project to database via appsettings.json
+1. In the production folder `HairSalon.Solution/HairSalon` create a file called `appsettings.json`
+2. Add the following code:`{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=3306;database={YOUR_SCHEMA_NAME};uid=root;pwd={YOUR_PASSWORD};"
+  }
+}`
+   * Fill in your the name of your schema and your MySQL Workbench password, omitting the curly braces
 
 ### Installation
 1. Clone the repository: `$ git clone https://github.com/RyanDanielWalker/HairSalon.Solution`
@@ -24,7 +42,8 @@ This application will allow Eau Claire to manage information about the Stylists 
     * Run the command `dotnet build` to build the project and its dependencies into a set of binaries
     * Finally, run the command `dotnet run` to run the project!
     * Note: `dotnet run` also restores and builds the project, so you can use this single command to start the app
-    * View the application via your preferred web browser by visiting `'localhost:5000/'`
+    * View the application via your preferred web browser by visiting `localhost:5000/`
+
 
 ## Known Bugs
 There were no bugs found.
