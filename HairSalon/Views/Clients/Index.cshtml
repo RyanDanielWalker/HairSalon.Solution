@@ -19,4 +19,8 @@
 </li>
 }
 
-@Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn btn-outline-dark"})
+<div class="flex">
+  @Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn btn-outline-dark"})
+  @Html.ActionLink("View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-outline-dark"})
+  @Html.ActionLink("Add new Client", "Create", "Clients", null, new {@class = "btn btn-outline-dark"})
+</div>

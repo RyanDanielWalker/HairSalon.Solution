@@ -9,11 +9,11 @@
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name, new {required = "required"})
   @Html.LabelFor(model => model.Notes)
   @Html.TextBoxFor(model => model.Notes)
   @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
+  @Html.DropDownList("StylistId", null, new {required = "required"})
 
   <input type="submit" value="Add New Client" class="btn btn-outline-success" />
 }
