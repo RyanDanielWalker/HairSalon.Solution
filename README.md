@@ -12,7 +12,7 @@ This application will allow Eau Claire to manage information about the Stylists 
 ### Prerequisites
 * [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 * A text editor like [VS Code](https://code.visualstudio.com/)
-* A command line interface like Terminal or GitBash to run and interact with the console app.
+* A command line interface like Terminal or GitBash to run and interact with the app.
 * [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
 ### Creating a database using SQL via MySQL
@@ -52,7 +52,8 @@ There were no bugs found.
 * ASP .NET Core MVC
 * C#
 * VS Code
-* MS Test
+* MySQL Workbench
+* MySQL
 
 ### License
 
